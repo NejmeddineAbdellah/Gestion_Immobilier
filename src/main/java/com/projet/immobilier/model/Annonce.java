@@ -1,9 +1,9 @@
-package com.projet.immeuble.model;
+package com.projet.immobilier.model;
 
-public class Annance {
-    protected long id_Annance;
-    protected long id_Maison;
-    protected long id_Client;
+public class Annonce {
+    private long id_Annance;
+    private long id_Maison;
+    private long cin_Vendeur;
     private String description_Annance;
 
     public long getId_Annance() {
@@ -22,14 +22,6 @@ public class Annance {
         this.id_Maison = id_Maison;
     }
 
-    public long getId_Client() {
-        return id_Client;
-    }
-
-    public void setId_Client(long id_Client) {
-        this.id_Client = id_Client;
-    }
-
     public String getDescription_Annance() {
         return description_Annance;
     }
@@ -37,4 +29,8 @@ public class Annance {
     public void setDescription_Annance(String description_Annance) {
         this.description_Annance = description_Annance;
     }
+
+    public long getCin_Vendeur() {return cin_Vendeur;}
+
+    public void setCin_Vendeur(long cin_Vendeur) {this.cin_Vendeur = cin_Vendeur;}
 }

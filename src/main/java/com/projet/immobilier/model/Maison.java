@@ -1,18 +1,27 @@
-package com.projet.immeuble.model;
+package com.projet.immobilier.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Maison {
 
-    protected long id_Maison;
-    private String num_Chambre;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private long id_Maison;
+    private long num_Chambre;
     private String adresse;
     private long surface;
+    private String description;
     private double prix_Maison;
 
 
     public long getId_Maison(){return id_Maison;}
     public void setId_Maison(long id_Maison) {this.id_Maison = id_Maison;}
-    public String getNum_Chambre() {return num_Chambre;}
-    public void setNum_Chambre(String num_Chambre) {this.num_Chambre = num_Chambre;}
+    public long getNum_Chambre() {return num_Chambre;}
+    public void setNum_Chambre(long num_Chambre) {this.num_Chambre = num_Chambre;}
     public String getAdresse() {return adresse;}
     public void setAdresse(String adresse) {this.adresse = adresse;}
     public long getSurface() {return surface;}

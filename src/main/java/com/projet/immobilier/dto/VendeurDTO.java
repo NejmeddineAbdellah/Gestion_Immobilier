@@ -1,7 +1,7 @@
-package com.projet.immeuble.model;
+package com.projet.immobilier.dto;
 
-public class Vendeur {
-    protected long id_Client;
+public class VendeurDTO {
+
     private String cin_Client;
     private String nom_Client;
     private String prenom_Client;
@@ -11,13 +11,6 @@ public class Vendeur {
     private String username;
     private String password;
 
-    public long getId_Client() {
-        return id_Client;
-    }
-
-    public void setId_Client(long id_Client) {
-        this.id_Client = id_Client;
-    }
 
     public String getCin_Client() {
         return cin_Client;
@@ -82,4 +75,5 @@ public class Vendeur {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
