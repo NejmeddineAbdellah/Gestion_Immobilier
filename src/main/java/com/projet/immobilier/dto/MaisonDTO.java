@@ -47,6 +47,7 @@ public class MaisonDTO {
     public void setPrix_Maison(double prix_Maison) {
         this.prix_Maison = prix_Maison;
     }
+
     public MaisonDTO(long id_maison, long num_chambre, String adresse, long surface, String description, double prix_maison) {
         id_Maison = id_maison;
         num_Chambre = num_chambre;

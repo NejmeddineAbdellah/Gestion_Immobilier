@@ -5,13 +5,16 @@ import com.projet.immobilier.service.VendeurService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+
+@RequestMapping("vendeur")
 public class VendeurController {
 
     @Autowired
     VendeurService vendeurService;
 
-    @PostMapping("/vendeur")
+    @PostMapping("/")
     public Vendeur receiveVendeur(@RequestBody Vendeur vendeur){
 
         return vendeurService.receiveVendeur(vendeur);
