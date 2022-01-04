@@ -28,4 +28,5 @@ public class Maison {
     public void setSurface(long surface) {this.surface = surface;}
     public double getPrix_Maison() {return prix_Maison;}
     public void setPrix_Maison(double prix_Maison) {this.prix_Maison = prix_Maison;}
+
 }

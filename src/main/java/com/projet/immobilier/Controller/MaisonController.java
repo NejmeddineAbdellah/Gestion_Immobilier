@@ -6,13 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("Maison")
+@RequestMapping("/maison")
 public class MaisonController {
 
     @Autowired
     MaisonService maisonService;
 
-    @PostMapping("/maison")
+    @PostMapping("/add")
     public Maison receiveMaison(@RequestBody Maison maison){
 
         return maisonService.receiveMaison(maison);
